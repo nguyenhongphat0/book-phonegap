@@ -165,7 +165,6 @@ var AppComponent = /** @class */ (function () {
             return true;
         }
         else {
-            console.log('keeping navbar ', titlee);
             return false;
         }
     };
@@ -210,15 +209,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ngx_scrollspy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-scrollspy */ "./node_modules/ngx-scrollspy/ngx-scrollspy.es5.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _book_listing_book_listing_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./book-listing/book-listing.component */ "./src/app/book-listing/book-listing.component.ts");
-/* harmony import */ var _book_reader_book_reader_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./book-reader/book-reader.component */ "./src/app/book-reader/book-reader.component.ts");
-/* harmony import */ var _book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./book-modal-toc/book-modal-toc.component */ "./src/app/book-modal-toc/book-modal-toc.component.ts");
-/* harmony import */ var _book_contact_book_contact_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./book-contact/book-contact.component */ "./src/app/book-contact/book-contact.component.ts");
-/* harmony import */ var _book_chapter_book_chapter_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./book-chapter/book-chapter.component */ "./src/app/book-chapter/book-chapter.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _tinymce_tinymce_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @tinymce/tinymce-angular */ "./node_modules/@tinymce/tinymce-angular/esm5/tinymce-tinymce-angular.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _book_listing_book_listing_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./book-listing/book-listing.component */ "./src/app/book-listing/book-listing.component.ts");
+/* harmony import */ var _book_reader_book_reader_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./book-reader/book-reader.component */ "./src/app/book-reader/book-reader.component.ts");
+/* harmony import */ var _book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./book-modal-toc/book-modal-toc.component */ "./src/app/book-modal-toc/book-modal-toc.component.ts");
+/* harmony import */ var _book_contact_book_contact_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./book-contact/book-contact.component */ "./src/app/book-contact/book-contact.component.ts");
+/* harmony import */ var _book_chapter_book_chapter_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./book-chapter/book-chapter.component */ "./src/app/book-chapter/book-chapter.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -242,34 +242,36 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"],
                 _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_2__["NavbarComponent"],
-                _book_listing_book_listing_component__WEBPACK_IMPORTED_MODULE_9__["BookListingComponent"],
-                _book_reader_book_reader_component__WEBPACK_IMPORTED_MODULE_10__["BookReaderComponent"],
-                _book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_11__["BookModalTocComponent"],
-                _book_contact_book_contact_component__WEBPACK_IMPORTED_MODULE_12__["BookContactComponent"],
-                _book_chapter_book_chapter_component__WEBPACK_IMPORTED_MODULE_13__["BookChapterComponent"]
+                _book_listing_book_listing_component__WEBPACK_IMPORTED_MODULE_10__["BookListingComponent"],
+                _book_reader_book_reader_component__WEBPACK_IMPORTED_MODULE_11__["BookReaderComponent"],
+                _book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_12__["BookModalTocComponent"],
+                _book_contact_book_contact_component__WEBPACK_IMPORTED_MODULE_13__["BookContactComponent"],
+                _book_chapter_book_chapter_component__WEBPACK_IMPORTED_MODULE_14__["BookChapterComponent"]
             ],
-            entryComponents: [_book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_11__["BookModalTocComponent"]],
+            entryComponents: [_book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_12__["BookModalTocComponent"]],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormsModule"],
                 ngx_scrollspy__WEBPACK_IMPORTED_MODULE_3__["ScrollSpyModule"].forRoot(),
                 ngx_scrollspy__WEBPACK_IMPORTED_MODULE_3__["ScrollSpyIndexModule"],
                 ngx_scrollspy__WEBPACK_IMPORTED_MODULE_3__["ScrollSpyAffixModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_14__["HttpClientModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"].forRoot()
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"].forRoot(),
+                _tinymce_tinymce_angular__WEBPACK_IMPORTED_MODULE_6__["EditorModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -286,7 +288,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h4 id=\"chapter-{{chapter.id}}\">{{chapter.name}}</h4>\n  <p [innerHtml]=\"chapter.text\"></p>\n  <ng-container *ngIf=\"chapter.children != null\">\n    <app-book-chapter *ngFor='let child of chapter.children' class=\"sub-chapter\" [class.padding-navbar]=\"isScrolledToView(child.id)\" [scrollToChapterId]=\"scrollToChapterId\" [chapter]=\"child\" [attr.data-id]=\"child.id\" [attr.data-content]=\"child.name\"></app-book-chapter>\n  </ng-container>\n</div>"
+module.exports = "<div>\n  <h4 id=\"chapter-{{chapter.id}}\">\n    <span *ngIf=\"chapter.id != editing\">{{chapter.name}}</span>\n    <input [hidden]=\"chapter.id != editing\" (keyup.enter)=\"save(chapter)\" (keyup.esc)=\"cancel(chapter)\" [(ngModel)]=\"chapter.id\" type=\"text\" style=\"width: 50px\">.\n    <input [hidden]=\"chapter.id != editing\" (keyup.enter)=\"save(chapter)\" (keyup.esc)=\"cancel(chapter)\" [(ngModel)]=\"chapter.name\" type=\"text\">\n  </h4>\n  <p>\n    <a *ngIf=\"chapter.id != editing\" (click)=\"edit(chapter)\"><i class=\"fas fa-edit\"></i></a>\n    <a *ngIf=\"chapter.id == editing\" (click)=\"save(chapter)\"><i class=\"fas fa-check\"></i></a>\n  </p>\n  <editor [hidden]=\"chapter.id != editing\" apiKey=\"5g5faf78gvk6yfq9bd3bbfjo858kjx1q8o0nbiwtygo2e4er\" [(ngModel)]=\"chapter.text\"></editor>\n  <p [hidden]=\"chapter.id == editing\" [innerHtml]=\"chapter.text\"></p>\n  <ng-container *ngIf=\"chapter.children != null\">\n    <app-book-chapter *ngFor='let child of chapter.children' class=\"sub-chapter\" [class.padding-navbar]=\"isScrolledToView(child.id)\" [scrollToChapterId]=\"scrollToChapterId\" [chapter]=\"child\" [attr.data-id]=\"child.id\" [attr.data-content]=\"child.name\"></app-book-chapter>\n  </ng-container>\n</div>"
 
 /***/ }),
 
@@ -297,7 +299,7 @@ module.exports = "<div>\n  <h4 id=\"chapter-{{chapter.id}}\">{{chapter.name}}</h
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".fas.fa-edit, .fas.fa-check {\n  float: right;\n  cursor: pointer;\n  margin-top: -25px; }\n"
 
 /***/ }),
 
@@ -333,6 +335,18 @@ var BookChapterComponent = /** @class */ (function () {
     BookChapterComponent.prototype.isScrolledToView = function () {
         // console.log('this.scrollToChapterId is ',this.scrollToChapterId,'id param is', this.chapter.id);
         return this.scrollToChapterId === this.chapter.id;
+    };
+    BookChapterComponent.prototype.edit = function (chapter) {
+        this.editing = chapter.id;
+        this.beforeEdit = chapter.name;
+    };
+    BookChapterComponent.prototype.save = function (chapter) {
+        this.editing = -1;
+        // fetch some api
+    };
+    BookChapterComponent.prototype.cancel = function (chapter) {
+        this.editing = -1;
+        chapter.name = this.beforeEdit;
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
@@ -427,7 +441,7 @@ var BookContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"section\">\n    <div class=\"book-listing container tim-container\">\n        <table class=\"table table-striped\">\n            <thead>\n            <tr>\n                <th width=\"10%\">#</th>\n                <th>Book Title</th>\n            </tr>\n            </thead>\n            <tbody>\n                <tr *ngFor=\"let book of bookList; let i = index\">\n                    <td>{{i + 1}}</td>\n                    <td><a routerLink=\"/books/{{book.id}}/reader\">{{book.name}}</a></td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n</div>"
+module.exports = "<div class=\"section\">\n    <div class=\"book-listing container tim-container\">\n        <table class=\"table table-striped\">\n            <thead>\n            <tr>\n                <th width=\"10%\">#</th>\n                <th>Book Title</th>\n                <th width=\"10%\"></th>\n            </tr>\n            </thead>\n            <tbody>\n                <tr *ngFor=\"let book of bookList; let i = index\">\n                    <td>{{i + 1}}</td>\n                    <td>\n                        <a *ngIf=\"book.id != editing\" routerLink=\"/books/{{book.id}}/reader\">{{book.name}}</a>\n                        <input [hidden]=\"book.id != editing\" id=\"edit-{{book.id}}\" type=\"text\" [(ngModel)]=\"book.name\" (keyup.enter)=\"save(book)\" (blur)=\"save(book)\" (keyup.esc)=\"cancel(book)\">\n                    </td>\n                    <td style=\"text-align: center\">\n                        <a *ngIf=\"book.id != editing\" (click)=\"edit(book)\"><i class=\"fas fa-edit\"></i></a>\n                        <a *ngIf=\"book.id == editing\" (click)=\"save(book)\" style=\"color: #51bcda\"><i class=\"fas fa-check\"></i></a>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -438,7 +452,7 @@ module.exports = "<div class=\"section\">\n    <div class=\"book-listing contain
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "a {\n  cursor: pointer; }\n"
 
 /***/ }),
 
@@ -484,18 +498,30 @@ var BookListingComponent = /** @class */ (function () {
         this.bookSubHeading = '';
         this.inSubChapter = false;
     }
-    BookListingComponent.prototype.openToc = function () {
-        var modalRef = this.modalService.open(_book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_4__["BookModalTocComponent"]);
-        modalRef.componentInstance.name = 'World';
-    };
     BookListingComponent.prototype.ngAfterViewInit = function () {
     };
     BookListingComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.bookService.all().subscribe(function (books) {
-            console.log(books);
             _this.bookList = books;
         });
+    };
+    BookListingComponent.prototype.openToc = function () {
+        var modalRef = this.modalService.open(_book_modal_toc_book_modal_toc_component__WEBPACK_IMPORTED_MODULE_4__["BookModalTocComponent"]);
+        modalRef.componentInstance.name = 'World';
+    };
+    BookListingComponent.prototype.edit = function (book) {
+        this.editing = book.id;
+        this.beforeEdit = book.name;
+        document.getElementById("edit-" + book.id).focus();
+    };
+    BookListingComponent.prototype.save = function (book) {
+        this.editing = -1;
+        // fetch some api
+    };
+    BookListingComponent.prototype.cancel = function (book) {
+        this.editing = -1;
+        book.name = this.beforeEdit;
     };
     BookListingComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -602,7 +628,7 @@ var BookModalTocComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg sticky-top navbar-light\" color-on-scroll=\"500\">\n    <div class=\"container\">\n        <div class=\"navbar-translate\">\n            <!--<a class=\"navbar-brand\" href=\"/\">{{ navBarTitle }}</a>-->\n            <div class=\"navbar-brand chapter-spy\">\n                <span ngbDropdown class=\"heading d-inline-block dropdown\">\n                    <span class=\"nav-link chapter-dropdown\" id=\"dropdownHeading\"\n                          ngbDropdownToggle>{{ bookHeading }}</span>\n                    <span ngbDropdownMenu aria-labelledby=\"dropdownHeading\" class=\"dropdown-primary dropdown-content\">\n                        <a class=\"dropdown-item\" *ngFor=\"let chapter of chapters\" (click)=\"scrollToChapter(chapter.id, 50)\">{{chapter.name}}</a>\n                    </span>\n                </span>\n\n                <span *ngIf=\"inSubChapter\" ngbDropdown class=\"sub-heading d-inline-block dropdown\">\n                    <span class=\"nav-link chapter-dropdown\" id=\"dropdownSubHeading\" ngbDropdownToggle>{{ bookSubHeading }}</span>\n                    <span ngbDropdownMenu aria-labelledby=\"dropdownSubHeading\"\n                          class=\"dropdown-primary dropdown-content\">\n                        <a class=\"dropdown-item\" *ngFor=\"let chapter of getViewingSubChapters()\" (click)=\"scrollToChapter(chapter.id, 70)\">{{chapter.name}}</a>\n                    </span>\n                </span>\n            </div>\n        </div>\n    </div>\n</nav>\n<nav class=\"navbar navbar-expand-lg fixed-bottom navbar-light\" color-on-scroll=\"500\">\n    <div class=\"container\">\n        <a routerLink=\"/dashboard\" class=\"btn btn-outline-primary btn-sm btn-border btn-round\">HOME</a>\n        <a routerLink=\"/contacts\" class=\"btn btn-sm btn-outline-primary btn-border btn-round\">CONTACTS</a>\n        <button type=\"button\" class=\"btn btn-sm btn-outline-primary btn-border btn-round\" (click)=\"openToc()\">BOOK TOC\n        </button>\n    </div>\n</nav>\n<div class=\"section\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"d-none d-md-block col-md-4 book-chapters\">\n                <h3>Table of Contents</h3>\n                <ul>\n                    <li *ngFor=\"let chapter of chapters\"><span (click)=\"scrollToChapter(chapter.id, 50)\">{{chapter.name}}</span>\n                        <ul>\n                            <li *ngFor=\"let child of chapter.children\" (click)=\"scrollToChapter(child.id, 70)\">{{child.name}}</li>\n                        </ul>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"col-md-8 book-reader\">\n                <h3 *ngIf=\"book\">{{book.name}}</h3>\n                <i *ngIf=\"book\">{{book.description}}</i>\n                <div scrollSpy [scrollSpyIndex]=\"{id: 'chapters', selector: 'chapter'}\">\n                    <div [scrollSpyIndex]=\"{id: 'subChapters', selector: 'sub-chapter'}\">\n                        <app-book-chapter *ngFor='let chapter of chapters' [class.sub-chapter]=\"isSubChapter(chapter.id)\" [class.chapter]=\"!isSubChapter(chapter.id)\" [class.padding-navbar]=\"isScrolledToView(chapter.id)\" [scrollToChapterId]=[scrollToChapterId] [chapter]=\"chapter\" [attr.data-id]=\"chapter.id\" [attr.data-content]=\"chapter.name\">\n                        </app-book-chapter>\n\n\n                        <div #view1 [class.padding-navbar]=\"isScrolledToView(21)\" data-id=\"21\" class=\"chapter\" data-content=\"Hello Chapter 2\">\n                            <h1>Imhere</h1>\n                        </div>    \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div id=\"book-reader\">\n    <nav class=\"navbar navbar-expand-lg sticky-top navbar-light\" color-on-scroll=\"500\">\n        <div class=\"container\">\n            <div class=\"navbar-translate\">\n                <!--<a class=\"navbar-brand\" href=\"/\">{{ navBarTitle }}</a>-->\n                <div class=\"navbar-brand chapter-spy\">\n                    <span ngbDropdown class=\"heading d-inline-block dropdown\">\n                        <span class=\"nav-link chapter-dropdown\" id=\"dropdownHeading\"\n                            ngbDropdownToggle>{{ bookHeading }}</span>\n                        <span ngbDropdownMenu aria-labelledby=\"dropdownHeading\" class=\"dropdown-primary dropdown-content\">\n                            <a class=\"dropdown-item\" *ngFor=\"let chapter of chapters\" (click)=\"scrollToChapter(chapter.id, 50)\">{{chapter.name}}</a>\n                        </span>\n                    </span>\n\n                    <span *ngIf=\"inSubChapter\" ngbDropdown class=\"sub-heading d-inline-block dropdown\">\n                        <span class=\"nav-link chapter-dropdown\" id=\"dropdownSubHeading\" ngbDropdownToggle>{{ bookSubHeading }}</span>\n                        <span ngbDropdownMenu aria-labelledby=\"dropdownSubHeading\"\n                            class=\"dropdown-primary dropdown-content\">\n                            <a class=\"dropdown-item\" *ngFor=\"let chapter of getViewingSubChapters()\" (click)=\"scrollToChapter(chapter.id, 70)\">{{chapter.name}}</a>\n                        </span>\n                    </span>\n                </div>\n            </div>\n        </div>\n    </nav>\n    <nav class=\"navbar navbar-expand-lg fixed-bottom navbar-light\" color-on-scroll=\"500\">\n        <div class=\"container\">\n            <a routerLink=\"/dashboard\" class=\"btn btn-outline-primary btn-sm btn-border btn-round\">HOME</a>\n            <a routerLink=\"/contacts\" class=\"btn btn-sm btn-outline-primary btn-border btn-round\">CONTACTS</a>\n            <button type=\"button\" class=\"btn btn-sm btn-outline-primary btn-border btn-round\" (click)=\"openToc()\">BOOK TOC\n            </button>\n        </div>\n    </nav>\n    <div class=\"section\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"d-none d-md-block col-md-4 book-chapters\">\n                    <h3>Table of Contents</h3>\n                    <ul>\n                        <li *ngFor=\"let chapter of chapters\">\n                            <span>\n                                <span *ngIf=\"chapter.id != editing\" (click)=\"scrollToChapter(chapter.id, 50)\">{{chapter.name}}</span>\n                                <input [hidden]=\"chapter.id != editing\" (keyup.enter)=\"save(chapter)\" (blur)=\"save(chapter)\" (keyup.esc)=\"cancel(chapter)\" [(ngModel)]=\"chapter.name\" type=\"text\">\n                                <a *ngIf=\"chapter.id != editing\" (click)=\"edit(chapter)\"><i class=\"fas fa-edit\"></i></a>\n                                <a *ngIf=\"chapter.id == editing\" (click)=\"save(chapter)\"><i class=\"fas fa-check\"></i></a>\n                            </span>\n                            <ul>\n                                <li *ngFor=\"let child of chapter.children\">\n                                    <span *ngIf=\"child.id != editing\" (click)=\"scrollToChapter(child.id, 70)\">{{child.name}}</span>\n                                    <input [hidden]=\"child.id != editing\" (keyup.enter)=\"save(child)\" (blur)=\"save(child)\" (keyup.esc)=\"cancel(child)\" [(ngModel)]=\"child.name\" type=\"text\">\n                                    <a *ngIf=\"child.id != editing\" (click)=\"edit(child)\"><i class=\"fas fa-edit\"></i></a>\n                                    <a *ngIf=\"child.id == editing\" (click)=\"save(child)\"><i class=\"fas fa-check\"></i></a>\n                                </li>\n                            </ul>\n                        </li>\n                    </ul>\n                </div>\n                <div class=\"col-md-8 book-reader\">\n                    <h3 *ngIf=\"book\">{{book.name}}</h3>\n                    <i *ngIf=\"book\">{{book.description}}</i>\n                    <div scrollSpy [scrollSpyIndex]=\"{id: 'chapters', selector: 'chapter'}\">\n                        <div [scrollSpyIndex]=\"{id: 'subChapters', selector: 'sub-chapter'}\">\n                            <app-book-chapter *ngFor='let chapter of chapters' [class.sub-chapter]=\"isSubChapter(chapter.id)\" [class.chapter]=\"!isSubChapter(chapter.id)\" [class.padding-navbar]=\"isScrolledToView(chapter.id)\" [scrollToChapterId]=[scrollToChapterId] [chapter]=\"chapter\" [attr.data-id]=\"chapter.id\" [attr.data-content]=\"chapter.name\">\n                            </app-book-chapter>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -613,7 +639,7 @@ module.exports = "<nav class=\"navbar navbar-expand-lg sticky-top navbar-light\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".dropdown-content {\n  overflow-y: scroll;\n  max-height: 420px; }\n\n.dropdown-toggle::after {\n  display: none; }\n\n.navbar-nav .dropdown-item.show .dropdown-menu, .dropdown.show .dropdown-menu, .dropdown-btn.show .dropdown-menu {\n  -webkit-transform: translate3d(0px, -10px, 0px);\n  transform: translate3d(0px, -10px, 0px); }\n\n.dropdown .dropdown-menu {\n  background-color: #FFFFFF;\n  border: 0 none;\n  border-radius: 12px;\n  display: block;\n  margin-top: 10px;\n  padding: 0px;\n  position: absolute;\n  opacity: 1;\n  filter: alpha(opacity=0);\n  box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1); }\n\n.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-primary .dropdown-item:focus {\n  background-color: #6dd3d6; }\n\n.dropdown .dropdown-menu .dropdown-item:first-child a, .dropdown .dropdown-menu .dropdown-item:first-child {\n  border-top-right-radius: 12px;\n  border-top-left-radius: 12px; }\n\n.dropdown .dropdown-menu .dropdown-item:last-child a, .dropdown .dropdown-menu .dropdown-item:last-child {\n  border-bottom-right-radius: 12px;\n  border-bottom-left-radius: 12px; }\n\n.chapter-dropdown {\n  padding-top: 0px;\n  padding-bottom: 0px; }\n\n.navbar .navbar-brand {\n  padding-top: 10px;\n  padding-bottom: 10px; }\n\n.heading {\n  display: block !important; }\n\n.sub-heading {\n  font-size: 11px; }\n\n.chapter-spy, .heading, .sub-heading, .dropdown-content, .dropdown-item {\n  width: 100%;\n  white-space: normal !important; }\n\n.navbar-brand.chapter-spy {\n  padding-right: 5px;\n  padding-left: 5px; }\n\n.navbar > .container, .navbar > .container-fluid {\n  justify-content: center; }\n\n.section {\n  padding: 0px 0; }\n\n.padding-navbar {\n  padding: 70px 0; }\n\n.book-chapters li {\n  cursor: pointer; }\n"
+module.exports = "#book-reader {\n  padding-bottom: 100px; }\n\n.dropdown-content {\n  overflow-y: scroll;\n  max-height: 420px; }\n\n.dropdown-toggle::after {\n  display: none; }\n\n.navbar-nav .dropdown-item.show .dropdown-menu, .dropdown.show .dropdown-menu, .dropdown-btn.show .dropdown-menu {\n  -webkit-transform: translate3d(0px, -10px, 0px);\n  transform: translate3d(0px, -10px, 0px); }\n\n.dropdown .dropdown-menu {\n  background-color: #FFFFFF;\n  border: 0 none;\n  border-radius: 12px;\n  display: block;\n  margin-top: 10px;\n  padding: 0px;\n  position: absolute;\n  opacity: 1;\n  filter: alpha(opacity=0);\n  box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1); }\n\n.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-primary .dropdown-item:focus {\n  background-color: #6dd3d6; }\n\n.dropdown .dropdown-menu .dropdown-item:first-child a, .dropdown .dropdown-menu .dropdown-item:first-child {\n  border-top-right-radius: 12px;\n  border-top-left-radius: 12px; }\n\n.dropdown .dropdown-menu .dropdown-item:last-child a, .dropdown .dropdown-menu .dropdown-item:last-child {\n  border-bottom-right-radius: 12px;\n  border-bottom-left-radius: 12px; }\n\n.chapter-dropdown {\n  padding-top: 0px;\n  padding-bottom: 0px; }\n\n.navbar .navbar-brand {\n  padding-top: 10px;\n  padding-bottom: 10px; }\n\n.heading {\n  display: block !important; }\n\n.sub-heading {\n  font-size: 11px; }\n\n.chapter-spy, .heading, .sub-heading, .dropdown-content, .dropdown-item {\n  width: 100%;\n  white-space: normal !important; }\n\n.navbar-brand.chapter-spy {\n  padding-right: 5px;\n  padding-left: 5px; }\n\n.navbar > .container, .navbar > .container-fluid {\n  justify-content: center; }\n\n.section {\n  padding: 0px 0; }\n\n.padding-navbar {\n  padding: 70px 0; }\n\n.book-chapters li {\n  cursor: pointer; }\n\n.fas.fa-edit, .fas.fa-check {\n  float: right; }\n"
 
 /***/ }),
 
@@ -705,7 +731,6 @@ var BookReaderComponent = /** @class */ (function () {
     BookReaderComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.scrollSpyService.getObservable('window').subscribe(function (e) {
-            // console.log('e.target.pageYOffset: ', e.target.pageYOffset, 'e.target.scrollY: ', e.target.scrollY, 'e.target.scrollingElement.scrollTop: ', e.target.scrollingElement.scrollTop);
             var currentScrollPosition;
             if (typeof e.target.scrollingElement !== 'undefined') {
                 currentScrollPosition = e.target.scrollingElement.scrollTop;
@@ -765,6 +790,9 @@ var BookReaderComponent = /** @class */ (function () {
         // let items: any[] = this.scrollSpyIndex.getIndex('contexts');
         // console.log('items í ', items);
     };
+    BookReaderComponent.prototype.ngOnDestroy = function () {
+        this.scrollSpyService.deleteObservable('window');
+    };
     BookReaderComponent.prototype.loadBookInfo = function () {
         var _this = this;
         this.activeRoute.params.subscribe(function (params) {
@@ -777,6 +805,7 @@ var BookReaderComponent = /** @class */ (function () {
         var _this = this;
         this.bookChapterService.getBookChapters(this.bookId).subscribe(function (chapters) {
             _this.chapters = chapters;
+            console.log(chapters);
         });
     };
     BookReaderComponent.prototype.getViewingSubChapters = function () {
@@ -789,6 +818,18 @@ var BookReaderComponent = /** @class */ (function () {
     };
     BookReaderComponent.prototype.ngOnInit = function () {
         this.loadBookInfo();
+    };
+    BookReaderComponent.prototype.edit = function (chapter) {
+        this.editing = chapter.id;
+        this.beforeEdit = chapter.name;
+    };
+    BookReaderComponent.prototype.save = function (chapter) {
+        this.editing = -1;
+        // fetch some api
+    };
+    BookReaderComponent.prototype.cancel = function (chapter) {
+        this.editing = -1;
+        chapter.name = this.beforeEdit;
     };
     BookReaderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
